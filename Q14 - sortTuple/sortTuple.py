@@ -33,7 +33,25 @@ Then, the output of the program should be:
 #   t = t.split(',')
 #   data.append((t[0], int(t[1]), int(t[2])))
 
-data = input("Enter input:")
+data = input("Enter input:\n")
 
-data.sort()
-print data
+def swap(data, i):
+  x = data[i]
+  data [i] = data[i + 1]
+  data[i + 1] = x
+
+def sortData(data):
+  for i in xrange(0, len(data) - 1):
+    if data[i] > data[i + 1]:
+      swap(data, i)
+      continue
+    if data[1] > data[1]:
+      swap(data, i)
+      continue
+    if data[2] > data[2]:
+      swap(data, i)
+      continue
+  return data
+
+
+print sortData(data)
