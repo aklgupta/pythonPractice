@@ -17,8 +17,8 @@ Then, the output of the program should be:
 
 # data = [("Tom",19,80),("John",20,90),("Jony",17,91),("Jony",17,93),("Json",21,85),]
 
-data = []
-n = input("No of tuples: ")
+# data = []
+# n = input("No of tuples: ")
 
 # Seperate Inputs
 # for _ in xrange(n):
@@ -28,10 +28,12 @@ n = input("No of tuples: ")
 #   data.append((name, age, height))
 
 # Comma sep Inputs
-for _ in xrange(n):
-  t = raw_input("Name, Age, Height: ")
-  t = t.split(',')
-  data.append((t[0], int(t[1]), int(t[2])))
+# for _ in xrange(n):
+#   t = raw_input("Name, Age, Height: ")
+#   t = t.split(',')
+#   data.append((t[0], int(t[1]), int(t[2])))
+
+data = input("Enter input:")
 
 data.sort()
 print data
