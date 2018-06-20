@@ -42,13 +42,13 @@ def swap(data, i):
 
 def sortData(data):
   for i in xrange(0, len(data) - 1):
-    if data[i] > data[i + 1]:
+    if data[i][0] > data[i + 1][0]:
       swap(data, i)
       continue
-    if data[1] > data[1]:
+    if data[i][1] > data[i][1]:
       swap(data, i)
       continue
-    if data[2] > data[2]:
+    if data[i][2] > data[i][2]:
       swap(data, i)
       continue
   return data
